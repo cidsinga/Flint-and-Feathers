@@ -6,6 +6,7 @@
 11:05 tutorial land
 11:35 "           "
 12:25 more tutorial
+1:45 studying react router
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
