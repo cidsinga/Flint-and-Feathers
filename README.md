@@ -2,6 +2,7 @@
 8:50 been exploring how to get started
 9:30 watching tutorials on site conception
 10:05 continuing tutorials
+10:40 investigating UX principles
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
