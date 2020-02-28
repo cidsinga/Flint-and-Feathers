@@ -9,6 +9,7 @@
 1:45 studying react router
 2:20 "                   "
 2:45 aha moments in react router
+3:10 understanding state, headed to meeting with CTO of vooks.com
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
