@@ -1,5 +1,6 @@
 8:00 getting this party started
 8:50 been exploring how to get started
+9:30 watching tutorials on site conception
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
