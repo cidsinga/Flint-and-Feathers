@@ -7,7 +7,7 @@
 11:35 "           "
 12:25 more tutorial
 1:45 studying react router
-
+2:20 "                   "
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
