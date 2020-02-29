@@ -10,6 +10,7 @@
 2:20 "                   "
 2:45 aha moments in react router
 3:10 understanding state, headed to meeting with CTO of vooks.com
+5:30 met with CTO of Vooks regarding project and intership.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
