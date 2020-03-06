@@ -12,7 +12,7 @@ function Header() {
   const list = {
     listStyle: 'none',
     display: 'inline-block',
-    float: 'left',
+    float: 'right',
 
   };
 
