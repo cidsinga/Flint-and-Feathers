@@ -4,18 +4,24 @@ import { Router } from "react-router-dom";
 
 function Header() {
   const container = {
-    display: "inline-block",
-    gridTemplateColumns: "1fr 1.5fr 1.5fr",
-    padding: "3%"
+    display: "inline-block"
   };
 
   const menu = {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    gridGap: "5px"
+    display: "inline-block",
+    display: "flex",
+    flexDirection: "row",
+    textAlign: "center",
+    height: "50px"
   };
 
   const flint = {};
+
+  const h3 = {
+    display: "inline-block",
+    padding: "5px",
+    textAlign: "center"
+  };
   return (
     <div style={container}>
       <div>
@@ -26,22 +32,22 @@ function Header() {
       <div stlye={menu}>
         <div>
           <Link to="/">
-            <h3>Collections</h3>
+            <h3 style={h3}>Collections</h3>
           </Link>
         </div>
         <div>
           <Link to="/">
-            <h3>About</h3>
+            <h3 style={h3}>About</h3>
           </Link>
         </div>
         <div>
           <Link to="/">
-            <h3>Gallery</h3>
+            <h3 style={h3}>Gallery</h3>
           </Link>
         </div>
         <div>
           <Link to="/">
-            <h3>Shop</h3>
+            <h3 style={h3}>Shop</h3>
           </Link>
         </div>
       </div>
