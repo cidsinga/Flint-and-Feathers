@@ -4,13 +4,15 @@ import { Router } from "react-router-dom";
 
 function Header() {
   const container = {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr",
+    display: "inline-block",
+    gridTemplateColumns: "1fr 1.5fr 1.5fr",
     padding: "3%"
   };
 
   const menu = {
-    display: "inline"
+    display: "grid",
+    gridTemplateColumns: "1fr 1fr 1fr 1fr",
+    gridGap: "5px"
   };
 
   const flint = {};
@@ -22,18 +24,26 @@ function Header() {
       <div></div>
 
       <div stlye={menu}>
-        <Link to="/">
-          <h3>Collections</h3>
-        </Link>
-        <Link to="/">
-          <h3>About</h3>
-        </Link>
-        <Link to="/">
-          <h3>Gallery</h3>
-        </Link>
-        <Link to="/">
-          <h3>Shop</h3>
-        </Link>
+        <div>
+          <Link to="/">
+            <h3>Collections</h3>
+          </Link>
+        </div>
+        <div>
+          <Link to="/">
+            <h3>About</h3>
+          </Link>
+        </div>
+        <div>
+          <Link to="/">
+            <h3>Gallery</h3>
+          </Link>
+        </div>
+        <div>
+          <Link to="/">
+            <h3>Shop</h3>
+          </Link>
+        </div>
       </div>
       <div></div>
     </div>
