@@ -4,20 +4,33 @@ import { Router } from "react-router-dom";
 
 function Header() {
   const container = {
-    display: "inline",
-    fontFamily: "'Oranienbaum,' serif"
+    width: '100%',
+    display: "inline-block",
+    fontFamily: "'Oranienbaum,' serif",
+  };
+
+  const list = {
+    listStyle: 'none',
+    display: 'inline-block',
+    float: 'left',
+
   };
 
   const menu = {
-    display: "inline",
+    display: "inline-block",
     display: "flex",
     flexDirection: "row",
-    textAlign: "center",
-    height: "50px"
+    float: 'right',
+    width: '70%',
+    textAlign: 'right',
+
   };
 
   const flint = {
-    fontFamily: "'Oranienbaum,' serif"
+    float: 'left',
+    width: '30%',
+    fontFamily: "'Oranienbaum,' serif",
+    height: '200px',
   };
 
   const h3 = {
@@ -30,30 +43,29 @@ function Header() {
       <div>
         <h1 style={flint}>flint and feathers</h1>
       </div>
-      <div></div>
 
-      <div stlye={menu}>
-        <div>
+      <ul stlye={menu}>
+        <li style={list}>
           <Link to="/">
             <h3 style={h3}>Collections</h3>
           </Link>
-        </div>
-        <div>
+        </li>
+        <li style={list}>
           <Link to="/">
             <h3 style={h3}>About</h3>
           </Link>
-        </div>
-        <div>
+        </li>
+        <li style={list}>
           <Link to="/">
             <h3 style={h3}>Gallery</h3>
           </Link>
-        </div>
-        <div>
+        </li>
+        <li style={list}>
           <Link to="/">
             <h3 style={h3}>Shop</h3>
           </Link>
-        </div>
-      </div>
+        </li>
+      </ul>
       <div></div>
     </div>
   );
