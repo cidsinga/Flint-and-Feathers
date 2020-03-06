@@ -4,11 +4,11 @@ import { Router } from "react-router-dom";
 
 function Header() {
   const container = {
-    display: "inline-block"
+    display: "inline"
   };
 
   const menu = {
-    display: "inline-block",
+    display: "inline",
     display: "flex",
     flexDirection: "row",
     textAlign: "center",
@@ -18,7 +18,7 @@ function Header() {
   const flint = {};
 
   const h3 = {
-    display: "inline-block",
+    display: "inline",
     padding: "5px",
     textAlign: "center"
   };
