@@ -4,7 +4,8 @@ import { Router } from "react-router-dom";
 
 function Header() {
   const container = {
-    display: "inline"
+    display: "inline",
+    fontFamily: "'Oranienbaum,' serif"
   };
 
   const menu = {
@@ -15,7 +16,9 @@ function Header() {
     height: "50px"
   };
 
-  const flint = {};
+  const flint = {
+    fontFamily: "'Oranienbaum,' serif"
+  };
 
   const h3 = {
     display: "inline",
