@@ -12,7 +12,7 @@
 3:10 understanding state, headed to meeting with CTO of vooks.com
 5:30 met with CTO of Vooks regarding project and intership.
 
-
+Getting going
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
