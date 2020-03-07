@@ -4,33 +4,31 @@ import { Router } from "react-router-dom";
 
 function Header() {
   const container = {
-    width: '100%',
+    width: "100%",
     display: "inline-block",
-    fontFamily: "'Oranienbaum,' serif",
+    fontFamily: "'Oranienbaum', serif"
   };
 
   const list = {
-    listStyle: 'none',
-    display: 'inline-block',
-    float: 'right',
-
+    listStyle: "none",
+    display: "inline-block",
+    float: "right"
   };
 
   const menu = {
     display: "inline-block",
     display: "flex",
     flexDirection: "row",
-    float: 'right',
-    width: '70%',
-    textAlign: 'right',
-
+    float: "right",
+    width: "70%",
+    textAlign: "right"
   };
 
   const flint = {
-    float: 'left',
-    width: '30%',
+    float: "left",
+    width: "30%",
     fontFamily: "'Oranienbaum,' serif",
-    height: '200px',
+    height: "200px"
   };
 
   const h3 = {
@@ -41,7 +39,7 @@ function Header() {
   return (
     <div style={container}>
       <div>
-        <h1 style={flint}>flint and feathers</h1>
+        <h1 style={flint}>FLINT & FEATHERS</h1>
       </div>
 
       <ul stlye={menu}>
