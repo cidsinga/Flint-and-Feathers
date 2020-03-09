@@ -52,12 +52,12 @@ function Header() {
 
       <div stlye={menu}>
         <li style={list}>
-          <Link to="/">
+          <a href="https://www.etsy.com/shop/flintandfeathers/">
             <h3 style={h3}>Shop</h3>
-          </Link>
+          </a>
         </li>
         <li style={list}>
-          <Link to="/">
+          <Link to="/about">
             <h3 style={h3}>About</h3>
           </Link>
         </li>

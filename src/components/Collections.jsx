@@ -11,7 +11,8 @@ function Collections() {
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",
-    fontSize: "20px"
+    fontSize: "20px",
+    backgroundColor: "#f2f2f2"
   };
 
   const line = {
@@ -21,8 +22,9 @@ function Collections() {
   };
 
   const photo = {
-    width: "30%",
-    marginTop: "3%"
+    width: "25%",
+    marginTop: "3%",
+    padding: "2.5%"
   };
 
   const tagline = {
