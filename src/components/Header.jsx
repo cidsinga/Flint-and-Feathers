@@ -6,13 +6,15 @@ function Header() {
   const container = {
     width: "100%",
     display: "inline-block",
-    fontFamily: "'Oranienbaum', serif"
+    fontFamily: "'Oranienbaum', serif",
+    color: "#2f2f2d"
   };
 
   const list = {
     listStyle: "none",
     display: "inline-block",
-    float: "right"
+    float: "right",
+    marginTop: "96px"
   };
 
   const menu = {
@@ -21,14 +23,17 @@ function Header() {
     flexDirection: "row",
     float: "right",
     width: "70%",
-    textAlign: "right"
+    marginLeft: "25px"
   };
 
   const flint = {
     float: "left",
     width: "30%",
     fontFamily: "'Oranienbaum,' serif",
-    height: "200px"
+    height: "200px",
+    marginTop: "100px",
+    textAlign: "left",
+    marginLeft: "50px"
   };
 
   const h3 = {
@@ -42,10 +47,10 @@ function Header() {
         <h1 style={flint}>FLINT & FEATHERS</h1>
       </div>
 
-      <ul stlye={menu}>
+      <div stlye={menu}>
         <li style={list}>
           <Link to="/">
-            <h3 style={h3}>Collections</h3>
+            <h3 style={h3}>Shop</h3>
           </Link>
         </li>
         <li style={list}>
@@ -60,10 +65,10 @@ function Header() {
         </li>
         <li style={list}>
           <Link to="/">
-            <h3 style={h3}>Shop</h3>
+            <h3 style={h3}>Collections</h3>
           </Link>
         </li>
-      </ul>
+      </div>
       <div></div>
     </div>
   );
