@@ -6,15 +6,17 @@ function Header() {
   const container = {
     width: "100%",
     display: "inline-block",
-    fontFamily: "'Oranienbaum', serif",
-    color: "#2f2f2d"
+    fontFamily: "'Julius Sans One', sans-serif",
+    color: "#2f2f2d",
+    height: "23vh"
   };
 
   const list = {
     listStyle: "none",
     display: "inline-block",
     float: "right",
-    marginTop: "96px"
+    marginTop: "96px",
+    fontSize: "14px"
   };
 
   const menu = {
@@ -23,17 +25,18 @@ function Header() {
     flexDirection: "row",
     float: "right",
     width: "70%",
-    marginLeft: "25px"
+    marginLeft: "35px"
   };
 
   const flint = {
     float: "left",
     width: "30%",
-    fontFamily: "'Oranienbaum,' serif",
+    fontFamily: "'Julius Sans One', sans-serif",
     height: "200px",
     marginTop: "100px",
     textAlign: "left",
-    marginLeft: "50px"
+    marginLeft: "50px",
+    fontSize: "38px"
   };
 
   const h3 = {
