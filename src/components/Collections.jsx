@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
 import flowers from "./Assets/flowersMock.jpg";
+import ruby from "./Assets/ruby.jpg";
+import gorge from "./Assets/gorge.jpg";
 
 function Collections() {
   const container = {
@@ -18,22 +20,29 @@ function Collections() {
     marginBottom: "2%"
   };
 
+  const photo = {
+    width: "30%",
+    marginTop: "3%"
+  };
+
   const tagline = {
     fontSize: "24px",
-    marginTop: "3%"
+    marginTop: "2%"
   };
 
   return (
     <div style={container}>
       <h1 style={tagline}>
-        EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME{" "}
+        EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME
       </h1>
       <hr style={line}></hr>
       <div>
         <h1 style={tagline}>COLLECTIONS</h1>
       </div>
       <div>
-        <img src={flowers} />
+        <img style={photo} src={flowers} />
+        <img style={photo} src={gorge} />
+        <img style={photo} src={ruby} />
       </div>
     </div>
   );
