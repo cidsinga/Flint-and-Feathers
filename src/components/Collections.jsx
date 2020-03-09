@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
+import flowers from "./Assets/flowersMock.jpg";
 
 function Collections() {
   const container = {
@@ -30,6 +31,9 @@ function Collections() {
       <hr style={line}></hr>
       <div>
         <h1 style={tagline}>COLLECTIONS</h1>
+      </div>
+      <div>
+        <img src={flowers} />
       </div>
     </div>
   );
