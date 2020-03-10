@@ -6,7 +6,9 @@ import brandy from "./Assets/brandy.jpg";
 function About() {
   const container = {
     fontFamily: "'Julius Sans One', sans-serif",
-    color: "#2f2f2d"
+    color: "#2f2f2d",
+    width: "100%",
+    height: "73vh"
   };
 
   const photo = {

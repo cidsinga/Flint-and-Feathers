@@ -8,6 +8,7 @@ import gorge from "./Assets/gorge.jpg";
 function Collections() {
   const container = {
     width: "100%",
+    height: "77vh",
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",

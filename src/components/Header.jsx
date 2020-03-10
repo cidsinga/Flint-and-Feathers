@@ -13,6 +13,7 @@ function Header() {
 
   const list = {
     listStyle: "none",
+    textDecoration: "none",
     display: "inline-block",
     float: "right",
     marginTop: "96px",
@@ -52,25 +53,33 @@ function Header() {
 
       <div stlye={menu}>
         <li style={list}>
-          <a href="https://www.etsy.com/shop/flintandfeathers/">
+          <a
+            href="https://www.etsy.com/shop/flintandfeathers/"
+            style={{ textDecoration: "none" }}
+          >
             <h3 style={h3}>Shop</h3>
           </a>
         </li>
         <li style={list}>
-          <Link to="/about">
+          <Link to="/about" style={{ textDecoration: "none" }}>
             <h3 style={h3}>About</h3>
           </Link>
         </li>
         <li style={list}>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <h3 style={h3}>Gallery</h3>
           </Link>
         </li>
         <li style={list}>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <h3 style={h3}>Collections</h3>
           </Link>
         </li>
+        <style jsx>{`
+          a:visited {
+            color: #2f2f2d;
+          }
+        `}</style>
       </div>
       <div></div>
     </div>
