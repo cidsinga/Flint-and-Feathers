@@ -18,7 +18,10 @@ function Header() {
     display: "inline-block",
     float: "right",
     marginTop: "96px",
-    fontSize: "14px"
+    fontSize: "14px",
+    paddingTop: "20px",
+    paddingRight: "2%",
+    fontSize: "10px"
   };
 
   const menu = {
@@ -26,7 +29,7 @@ function Header() {
     display: "flex",
     flexDirection: "row",
     float: "right",
-    width: "70%",
+    width: "69%",
     marginLeft: "35px"
   };
 
@@ -45,6 +48,12 @@ function Header() {
     display: "inline",
     padding: "5px",
     textAlign: "center"
+  };
+
+  const space = {
+    display: "inline-block",
+    float: "right",
+    width: "5%"
   };
 
   const HoverText = styled.h3`
@@ -75,7 +84,7 @@ function Header() {
           </Link>
         </li>
         <li style={list}>
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/gallery" style={{ textDecoration: "none" }}>
             <HoverText style={h3}>Gallery</HoverText>
           </Link>
         </li>
@@ -90,7 +99,7 @@ function Header() {
           }
         `}</style>
       </div>
-      <div></div>
+      <div style={space}> </div>
     </div>
   );
 }
