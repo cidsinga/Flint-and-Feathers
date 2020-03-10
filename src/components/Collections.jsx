@@ -11,8 +11,7 @@ function Collections() {
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",
-    fontSize: "20px",
-    backgroundColor: "#f2f2f2"
+    fontSize: "20px"
   };
 
   const line = {
