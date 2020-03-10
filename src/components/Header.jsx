@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
+import styled from "styled-components";
 
 function Header() {
   const container = {
@@ -45,6 +46,14 @@ function Header() {
     padding: "5px",
     textAlign: "center"
   };
+
+  const HoverText = styled.h3`
+    color: #000;
+    :hover {
+      color: gray;
+      cursor: pointer;
+    }
+  `;
   return (
     <div style={container}>
       <div>
@@ -57,22 +66,22 @@ function Header() {
             href="https://www.etsy.com/shop/flintandfeathers/"
             style={{ textDecoration: "none" }}
           >
-            <h3 style={h3}>Shop</h3>
+            <HoverText style={h3}>Shop</HoverText>
           </a>
         </li>
         <li style={list}>
           <Link to="/about" style={{ textDecoration: "none" }}>
-            <h3 style={h3}>About</h3>
+            <HoverText style={h3}>About</HoverText>
           </Link>
         </li>
         <li style={list}>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <h3 style={h3}>Gallery</h3>
+            <HoverText style={h3}>Gallery</HoverText>
           </Link>
         </li>
         <li style={list}>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <h3 style={h3}>Collections</h3>
+            <HoverText style={h3}>Collections</HoverText>
           </Link>
         </li>
         <style jsx>{`
