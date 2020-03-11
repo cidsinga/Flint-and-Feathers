@@ -23,8 +23,8 @@ function Collections() {
 
   const line = {
     width: "90%",
-    marginTop: "2%",
-    marginBottom: "2%"
+    marginTop: "4%",
+    marginBottom: "4%"
   };
 
   const photo = {
@@ -60,7 +60,6 @@ function Collections() {
   const HoverPic = styled.img`
     color: #000;
     :hover {
-      color: gray;
       opacity: 80%;
       cursor: pointer;
     }
