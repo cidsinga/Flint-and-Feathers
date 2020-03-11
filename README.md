@@ -1,85 +1,25 @@
-8:00 getting this party started
-8:50 been exploring how to get started
-9:30 watching tutorials on site conception
-10:05 continuing tutorials
-10:40 investigating UX principles
-11:05 tutorial land
-11:35 " "
-12:25 more tutorial
-1:45 studying react router
-2:20 " "
-2:45 aha moments in react router
-3:10 understanding state, headed to meeting with CTO of vooks.com
-5:30 met with CTO of Vooks regarding project and intership.
+## Flint & Feathers
 
-Getting going
+#### By _Casey Idsinga_
 
-searching for assets
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This is a Gallery site for Flint & Feathers artwork. By clicking on the "shop" link in the menu it will take you to the etsy shop where prints can be purchased.
 
-In the project directory, you can run:
+## Known Bugs
 
-### `npm start`
+Currently none
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). reactstrap and styled-components were used in addition to html and css.
 
-### `npm test`
+## Future Development
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Currently this project is stateless. I will continue working on this to integrate state and possibly build a webstore within the page instead of linking out to etsy. I also plan on formatting the images to all be the same aspect ratio.
 
-### `npm run build`
+### License
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+MIT
+<br>
+Copyright _Casey Idsinga_ 2020
