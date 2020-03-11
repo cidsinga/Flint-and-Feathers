@@ -13,7 +13,7 @@ import gathering from "./Assets/gathering.jpg";
 function Collections() {
   const container = {
     width: "100%",
-    height: "77vh",
+    height: "77%",
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",
@@ -30,11 +30,11 @@ function Collections() {
 
   const photo = {
     display: "inline-block",
-    width: "25%",
-    marginTop: "3%",
-    padding: "2.5%",
-    float: "left",
-    marginLeft: "3%"
+    width: "20%",
+    padding: "2.5%"
+    // float: "left",
+    // marginTop: "3%",
+    // marginLeft: "3%"
   };
 
   const tagline = {
@@ -67,48 +67,50 @@ function Collections() {
 
   const h3 = {};
 
-  return (
-    <div style={container}>
-      <Container>
-        <h1 style={tagline}>
-          EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME
-        </h1>
-        <hr style={line}></hr>
-        <div>
-          <h1 style={tagline}>COLLECTIONS</h1>
-        </div>
+  const topRow = {
+    width: "100%"
+  };
 
-        <Row>
-          <Col>
-            <Link to="/flowers" style={{ textDecoration: "none" }}>
-              <img style={photo} src={flowers} />
-            </Link>
-          </Col>
-          <Col>
-            <Link to="/scenes" style={{ textDecoration: "none" }}>
-              <img style={photo} src={gorge} />
-            </Link>
-          </Col>
-          <Col>
-            <Link to="/stones" style={{ textDecoration: "none" }}>
-              <img style={photo} src={ruby} />
-            </Link>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Link to="/Feathers" style={{ textDecoration: "none" }}>
-              <img style={pic} src={gathering} />
-            </Link>
-          </Col>
-          <Col>
-            <Link to="/fun" style={{ textDecoration: "none" }}>
-              <img style={pic} src={jewel} />
-            </Link>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+  return (
+    <Container style={container}>
+      <h1 style={tagline}>
+        EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME
+      </h1>
+      <hr style={line}></hr>
+      <div>
+        <h1 style={tagline}>COLLECTIONS</h1>
+      </div>
+
+      <Row style={topRow}>
+        <Col>
+          <Link to="/flowers" style={{ textDecoration: "none" }}>
+            <img style={photo} src={flowers} />
+          </Link>
+        </Col>
+        <Col>
+          <Link to="/scenes" style={{ textDecoration: "none" }}>
+            <img style={photo} src={gorge} />
+          </Link>
+        </Col>
+        <Col>
+          <Link to="/stones" style={{ textDecoration: "none" }}>
+            <img style={photo} src={ruby} />
+          </Link>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Link to="/Feathers" style={{ textDecoration: "none" }}>
+            <img style={pic} src={gathering} />
+          </Link>
+        </Col>
+        <Col>
+          <Link to="/fun" style={{ textDecoration: "none" }}>
+            <img style={pic} src={jewel} />
+          </Link>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

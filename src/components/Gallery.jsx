@@ -11,6 +11,8 @@ import ruby from "./Assets/ruby.jpg";
 import everest from "./Assets/everest.jpg";
 import emerald2 from "./Assets/emerald2.jpg";
 import summer from "./Assets/SummerFlowers.jpg";
+import gorge from "./Assets/gorge.jpg";
+import iris from "./Assets/iris.jpg";
 
 function Gallery() {
   const container = {
@@ -61,14 +63,16 @@ function Gallery() {
       <Row style={row}>
         <Col xs="auto" style={left}>
           <img style={photo} src={monroe} />
-          <img style={photo} src={group2} />
           <img style={photo} src={ruby} />
+          <img style={photo} src={group2} />
           <img style={photo} src={summer} />
+          <img style={photo} src={gorge} />
         </Col>
         <Col xs="auto" style={right}>
           <img style={photo} src={gathering} />
           <img style={photo} src={group} />
           <img style={photo} src={everest} />
+          <img style={photo} src={iris} />
           <img style={photo} src={emerald2} />
         </Col>
       </Row>
