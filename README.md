@@ -4,15 +4,17 @@
 10:05 continuing tutorials
 10:40 investigating UX principles
 11:05 tutorial land
-11:35 "           "
+11:35 " "
 12:25 more tutorial
 1:45 studying react router
-2:20 "                   "
+2:20 " "
 2:45 aha moments in react router
 3:10 understanding state, headed to meeting with CTO of vooks.com
 5:30 met with CTO of Vooks regarding project and intership.
 
 Getting going
+
+searching for assets
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -33,7 +33,7 @@ function About() {
       <h1 style={title}>About</h1>
       <img style={photo} src={brandy} />
       <p style={text}>
-        Brandy is and amazing artist, and even more amazing person. She does
+        Brandy is an amazing artist, and even more amazing person. She does
         everything better than you. I know. You're jealous. And you should be.
       </p>
     </div>
