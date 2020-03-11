@@ -8,7 +8,8 @@ function Gallery() {
     height: "77vh",
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
-    color: "#2f2f2d"
+    color: "#2f2f2d",
+    textAlign: "center"
   };
 
   const tagline = {

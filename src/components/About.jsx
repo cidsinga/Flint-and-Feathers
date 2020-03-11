@@ -8,7 +8,8 @@ function About() {
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",
     width: "100%",
-    height: "73vh"
+    height: "73vh",
+    textAlign: "center"
   };
 
   const photo = {

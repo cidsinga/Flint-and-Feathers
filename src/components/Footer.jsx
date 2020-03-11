@@ -11,7 +11,8 @@ function Footer() {
   const container = {
     width: "100%",
     height: "20%",
-    marginTop: "90%"
+    marginTop: "97%",
+    paddingTop: "90%"
   };
 
   const left = {
@@ -41,7 +42,7 @@ function Footer() {
 
   return (
     <div classstyle={container}>
-      <row style={{ marginBottom: "1%", marginTop: "5%" }}>
+      <row style={{ marginTop: "20%" }}>
         <Col xs="3">
           <h5 style={left}>Copyright Brandy Idsinga 2020</h5>
         </Col>

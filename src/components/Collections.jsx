@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
+import styled from "styled-components";
 import flowers from "./Assets/flowersMock.jpg";
 import ruby from "./Assets/ruby.jpg";
 import gorge from "./Assets/gorge.jpg";
+import peacock from "./Assets/peacock.jpg";
+import jewel from "./Assets/jewel.jpg";
 
 function Collections() {
   const container = {
@@ -12,7 +16,9 @@ function Collections() {
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",
-    fontSize: "20px"
+    fontSize: "20px",
+    marginBottom: "20%",
+    textAlign: "center"
   };
 
   const line = {
@@ -22,15 +28,36 @@ function Collections() {
   };
 
   const photo = {
+    display: "inline-block",
     width: "25%",
     marginTop: "3%",
-    padding: "2.5%"
+    padding: "2.5%",
+    float: "left",
+    marginLeft: "3%"
   };
 
   const tagline = {
     fontSize: "24px",
     marginTop: "2%"
   };
+
+  const pic = {
+    display: "inline-block",
+    width: "25%",
+    marginTop: "3%",
+    padding: "2.5%",
+    float: "left"
+  };
+
+  const HoverText = styled.h3`
+    color: #000;
+    :hover {
+      color: gray;
+      cursor: pointer;
+    }
+  `;
+
+  const h3 = {};
 
   return (
     <div style={container}>
@@ -41,11 +68,30 @@ function Collections() {
       <div>
         <h1 style={tagline}>COLLECTIONS</h1>
       </div>
-      <div>
-        <img style={photo} src={flowers} />
-        <img style={photo} src={gorge} />
-        <img style={photo} src={ruby} />
-      </div>
+      <Container>
+        <Row>
+          <Col>
+            <img style={photo} src={flowers} />
+            <Link to="/flowers" style={{ textDecoration: "none" }}>
+              <HoverText style={h3}>Flowers</HoverText>
+            </Link>
+          </Col>
+          <Col>
+            <img style={photo} src={gorge} />
+          </Col>
+          <Col>
+            <img style={photo} src={ruby} />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <img style={pic} src={peacock} />
+          </Col>
+          <Col>
+            <img style={pic} src={jewel} />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
