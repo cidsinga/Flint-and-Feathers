@@ -71,9 +71,8 @@ function Collections() {
       <Container>
         <Row>
           <Col>
-            <img style={photo} src={flowers} />
             <Link to="/flowers" style={{ textDecoration: "none" }}>
-              <HoverText style={h3}>Flowers</HoverText>
+              <img style={photo} src={flowers} />
             </Link>
           </Col>
           <Col>
