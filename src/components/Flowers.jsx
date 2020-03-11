@@ -24,23 +24,34 @@ function Flowers() {
   };
 
   const photo = {
-    width: "90%"
+    width: "100%",
+    marginTop: "2.5%",
+    marginBottom: "2.5%"
   };
 
   const left = {
     display: "inline-block",
     float: "left",
-    width: "50%"
+    width: "42.5%",
+    marginRight: "2.5%",
+    marginLeft: "5%"
   };
 
   const right = {
     display: "inline-block",
     float: "right",
-    width: "50%"
+    width: "42.5%",
+    marginLeft: "2.5%",
+    marginRight: "5%"
   };
 
   const row = {
     width: "100%"
+  };
+
+  const center = {
+    width: "50%",
+    textAlign: "center"
   };
 
   return (
@@ -56,11 +67,11 @@ function Flowers() {
           <Col xs="auto" style={right}>
             <img style={photo} src={summer} />
             <img style={photo} src={poppies} />
-            <img style={photo} src={newBeginningsFlowers} />
+            <img style={photo} src={monroe} />
           </Col>
         </Row>
         <row>
-          <img style={photo} src={monroe} />
+          <img style={center} src={newBeginningsFlowers} />
         </row>
         <Row></Row>
       </Container>
