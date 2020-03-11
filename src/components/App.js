@@ -24,6 +24,7 @@ function App() {
         <Route exact path="/fun" component={Fun} />
         <Route exact path="/scenes" component={Scenes} />
         <Route exact path="/stones" component={Stones} />
+        <Route exact path="/flowers" component={Flowers} />
       </Switch>
       <Footer />
     </div>

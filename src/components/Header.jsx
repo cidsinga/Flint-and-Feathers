@@ -66,7 +66,9 @@ function Header() {
   return (
     <div style={container}>
       <div>
-        <h1 style={flint}>FLINT & FEATHERS</h1>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h1 style={flint}>FLINT & FEATHERS</h1>
+        </Link>
       </div>
 
       <div stlye={menu}>

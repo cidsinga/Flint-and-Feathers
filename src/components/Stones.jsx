@@ -6,7 +6,7 @@ import styled from "styled-components";
 function Stones() {
   return (
     <div>
-      <h1>stuff</h1>
+      <h1>Stones</h1>
     </div>
   );
 }

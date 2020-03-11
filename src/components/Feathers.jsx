@@ -6,7 +6,7 @@ import styled from "styled-components";
 function Feathers() {
   return (
     <div>
-      <h1>stuff</h1>
+      <h1>Feathers</h1>
     </div>
   );
 }

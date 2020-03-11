@@ -57,18 +57,28 @@ function Collections() {
     }
   `;
 
+  const HoverPic = styled.img`
+    color: #000;
+    :hover {
+      color: gray;
+      opacity: 80%;
+      cursor: pointer;
+    }
+  `;
+
   const h3 = {};
 
   return (
     <div style={container}>
-      <h1 style={tagline}>
-        EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME
-      </h1>
-      <hr style={line}></hr>
-      <div>
-        <h1 style={tagline}>COLLECTIONS</h1>
-      </div>
       <Container>
+        <h1 style={tagline}>
+          EXPLORING NATURE'S BEAUTY ONE BRUSH STROKE AT A TIME
+        </h1>
+        <hr style={line}></hr>
+        <div>
+          <h1 style={tagline}>COLLECTIONS</h1>
+        </div>
+
         <Row>
           <Col>
             <Link to="/flowers" style={{ textDecoration: "none" }}>
@@ -76,18 +86,26 @@ function Collections() {
             </Link>
           </Col>
           <Col>
-            <img style={photo} src={gorge} />
+            <Link to="/scenes" style={{ textDecoration: "none" }}>
+              <img style={photo} src={gorge} />{" "}
+            </Link>
           </Col>
           <Col>
-            <img style={photo} src={ruby} />
+            <Link to="/stones" style={{ textDecoration: "none" }}>
+              <img style={photo} src={ruby} />
+            </Link>
           </Col>
         </Row>
         <Row>
           <Col>
-            <img style={pic} src={peacock} />
+            <Link to="/Feathers" style={{ textDecoration: "none" }}>
+              <img style={pic} src={peacock} />
+            </Link>
           </Col>
           <Col>
-            <img style={pic} src={jewel} />
+            <Link to="/fun" style={{ textDecoration: "none" }}>
+              <img style={pic} src={jewel} />
+            </Link>
           </Col>
         </Row>
       </Container>
