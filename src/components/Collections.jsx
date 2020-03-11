@@ -30,10 +30,10 @@ function Collections() {
 
   const photo = {
     display: "inline-block",
-    width: "20%",
-    padding: "2.5%"
-    // float: "left",
-    // marginTop: "3%",
+    width: "25%",
+    padding: "2.5%",
+    float: "left",
+    marginTop: "3%"
     // marginLeft: "3%"
   };
 
@@ -43,20 +43,25 @@ function Collections() {
   };
 
   const pic = {
-    display: "inline-block",
     width: "25%",
     marginTop: "3%",
     padding: "2.5%",
     float: "left"
   };
 
-  const HoverText = styled.h3`
-    color: #000;
-    :hover {
-      color: gray;
-      cursor: pointer;
-    }
-  `;
+  const topRow = {
+    width: "100%",
+    marginLeft: "5%",
+    marginRight: "auto"
+  };
+
+  const bottomRow = {
+    display: "inline-block",
+    width: "100%",
+    flost: "left",
+    marginLeft: "20%",
+    marginRight: "auto"
+  };
 
   const HoverPic = styled.img`
     :hover {
@@ -64,12 +69,6 @@ function Collections() {
       cursor: pointer;
     }
   `;
-
-  const h3 = {};
-
-  const topRow = {
-    width: "100%"
-  };
 
   return (
     <Container style={container}>
@@ -82,34 +81,26 @@ function Collections() {
       </div>
 
       <Row style={topRow}>
-        <Col>
-          <Link to="/flowers" style={{ textDecoration: "none" }}>
-            <img style={photo} src={flowers} />
-          </Link>
-        </Col>
-        <Col>
-          <Link to="/scenes" style={{ textDecoration: "none" }}>
-            <img style={photo} src={gorge} />
-          </Link>
-        </Col>
-        <Col>
-          <Link to="/stones" style={{ textDecoration: "none" }}>
-            <img style={photo} src={ruby} />
-          </Link>
-        </Col>
+        <Link to="/flowers" style={{ textDecoration: "none" }}>
+          <img style={photo} src={flowers} />
+        </Link>
+        <Link to="/scenes" style={{ textDecoration: "none" }}>
+          <img style={photo} src={gorge} />
+        </Link>
+        <Link to="/stones" style={{ textDecoration: "none" }}>
+          <img style={photo} src={ruby} />
+        </Link>
       </Row>
-      <Row>
-        <Col>
-          <Link to="/Feathers" style={{ textDecoration: "none" }}>
-            <img style={pic} src={gathering} />
-          </Link>
-        </Col>
-        <Col>
-          <Link to="/fun" style={{ textDecoration: "none" }}>
-            <img style={pic} src={jewel} />
-          </Link>
-        </Col>
-      </Row>
+      <br />
+      <div style={bottomRow}>
+        <Link to="/Feathers" style={{ textDecoration: "none" }}>
+          <img style={pic} src={gathering} />
+        </Link>
+
+        <Link to="/fun" style={{ textDecoration: "none" }}>
+          <img style={pic} src={jewel} />
+        </Link>
+      </div>
     </Container>
   );
 }

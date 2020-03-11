@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 function Header() {
   const container = {
-    width: "100%",
+    width: "100vw",
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",
