@@ -8,6 +8,7 @@ import ruby from "./Assets/ruby.jpg";
 import gorge from "./Assets/gorge.jpg";
 import peacock from "./Assets/peacock.jpg";
 import jewel from "./Assets/jewel.jpg";
+import gathering from "./Assets/gathering.jpg";
 
 function Collections() {
   const container = {
@@ -58,7 +59,6 @@ function Collections() {
   `;
 
   const HoverPic = styled.img`
-    color: #000;
     :hover {
       opacity: 80%;
       cursor: pointer;
@@ -86,7 +86,7 @@ function Collections() {
           </Col>
           <Col>
             <Link to="/scenes" style={{ textDecoration: "none" }}>
-              <img style={photo} src={gorge} />{" "}
+              <img style={photo} src={gorge} />
             </Link>
           </Col>
           <Col>
@@ -98,7 +98,7 @@ function Collections() {
         <Row>
           <Col>
             <Link to="/Feathers" style={{ textDecoration: "none" }}>
-              <img style={pic} src={peacock} />
+              <img style={pic} src={gathering} />
             </Link>
           </Col>
           <Col>

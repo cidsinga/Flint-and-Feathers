@@ -10,6 +10,7 @@ import grey from "./Assets/PaynesGreyFloral.jpg";
 import poppies from "./Assets/Poppies.jpg";
 import spring from "./Assets/SpringFlowers.jpg";
 import summer from "./Assets/SummerFlowers.jpg";
+import gathering from "./Assets/gathering.jpg";
 
 function Flowers() {
   const container = {

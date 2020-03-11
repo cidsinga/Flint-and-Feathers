@@ -10,6 +10,7 @@ import guinea from "./Assets/Guinea.jpg";
 import kestral from "./Assets/Kestral.jpg";
 import mac from "./Assets/Macgregor.jpg";
 import peacock from "./Assets/peacock.jpg";
+import gathering from "./Assets/gathering.jpg";
 
 function Feathers() {
   const container = {
@@ -59,7 +60,7 @@ function Feathers() {
       <h1>Feathers</h1>
       <Row style={row}>
         <Col xs="auto" style={left}>
-          <img style={photo} src={peacock} />
+          <img style={photo} src={gathering} />
           <img style={photo} src={blue} />
           <img style={photo} src={kestral} />
           <img style={photo} src={guinea} />
@@ -68,6 +69,7 @@ function Feathers() {
           <img style={photo} src={flicker} />
           <img style={photo} src={mac} />
           <img style={photo} src={smallP} />
+          <img style={photo} src={peacock} />
         </Col>
       </Row>
       <row></row>
