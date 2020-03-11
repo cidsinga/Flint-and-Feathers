@@ -6,6 +6,8 @@
 
 This is a Gallery site for Flint & Feathers artwork. By clicking on the "shop" link in the menu it will take you to the etsy shop where prints can be purchased.
 
+Deployed at (http://flint-and-feathers.herokuapp.com/)
+
 ## Known Bugs
 
 Currently none
