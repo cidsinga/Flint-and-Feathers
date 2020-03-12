@@ -11,6 +11,7 @@ import Flowers from "./Flowers";
 import Fun from "./Fun";
 import Scenes from "./Scenes";
 import Stones from "./Stones";
+import Error404 from "./Error404";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/scenes" component={Scenes} />
         <Route exact path="/stones" component={Stones} />
         <Route exact path="/flowers" component={Flowers} />
+        <Route component={Error404} />
       </Switch>
       <Footer />
     </div>
