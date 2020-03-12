@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
+import Figure from "react-bootstrap/Figure";
 import styled from "styled-components";
 import flowers from "./Assets/flowersMock.jpg";
 import ruby from "./Assets/ruby.jpg";
@@ -82,9 +83,11 @@ function Collections() {
       </div>
 
       <Row style={topRow}>
-        <Link to="/flowers" style={{ textDecoration: "none" }}>
-          <HoverPic style={photo} src={flowers} />
-        </Link>
+        <div>
+          <Link to="/flowers" style={{ textDecoration: "none" }}>
+            <HoverPic style={photo} src={flowers} />
+          </Link>
+        </div>
         <Link to="/scenes" style={{ textDecoration: "none" }}>
           <HoverPic style={photo} src={gorge} />
         </Link>
