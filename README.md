@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Future Development
 
-Currently this project is stateless. I will continue working on this to integrate state and possibly build a webstore within the page instead of linking out to etsy. I also plan on formatting the images to all be the same aspect ratio.
+Currently this project is stateless. I will continue working on this to integrate state and possibly build a web store within the page instead of linking out to etsy. I also plan on formatting the images to all be the same aspect ratio.
 
 ### License
 
