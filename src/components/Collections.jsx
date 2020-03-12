@@ -64,9 +64,10 @@ function Collections() {
   };
 
   const HoverPic = styled.img`
+    color: #000;
     :hover {
-      opacity: 80%;
       cursor: pointer;
+      opacity: 0.7;
     }
   `;
 
@@ -82,23 +83,23 @@ function Collections() {
 
       <Row style={topRow}>
         <Link to="/flowers" style={{ textDecoration: "none" }}>
-          <img style={photo} src={flowers} />
+          <HoverPic style={photo} src={flowers} />
         </Link>
         <Link to="/scenes" style={{ textDecoration: "none" }}>
-          <img style={photo} src={gorge} />
+          <HoverPic style={photo} src={gorge} />
         </Link>
         <Link to="/stones" style={{ textDecoration: "none" }}>
-          <img style={photo} src={ruby} />
+          <HoverPic style={photo} src={ruby} />
         </Link>
       </Row>
       <br />
       <div style={bottomRow}>
         <Link to="/Feathers" style={{ textDecoration: "none" }}>
-          <img style={pic} src={gathering} />
+          <HoverPic style={pic} src={gathering} />
         </Link>
 
         <Link to="/fun" style={{ textDecoration: "none" }}>
-          <img style={pic} src={jewel} />
+          <HoverPic style={pic} src={jewel} />
         </Link>
       </div>
     </Container>

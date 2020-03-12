@@ -63,11 +63,20 @@ function Header() {
       cursor: pointer;
     }
   `;
+
+  const HoverTitle = styled.h1`
+    color: #000;
+    :hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  `;
+
   return (
     <div style={container}>
       <div>
         <Link to="/" style={{ textDecoration: "none" }}>
-          <h1 style={flint}>FLINT & FEATHERS</h1>
+          <HoverTitle style={flint}>FLINT & FEATHERS</HoverTitle>
         </Link>
       </div>
 
