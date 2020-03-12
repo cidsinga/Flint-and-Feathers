@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Router } from "react-router-dom";
 import styled from "styled-components";
+import { Container, Row, Col } from "reactstrap";
 
 function Header() {
   const container = {
@@ -17,23 +18,18 @@ function Header() {
     textDecoration: "none",
     display: "inline-block",
     float: "right",
-    marginTop: "96px",
-    fontSize: "14px",
-    paddingTop: "20px",
-    paddingRight: "2%",
     fontSize: "10px"
   };
 
   const menu = {
     display: "inline-block",
     display: "flex",
-    flexDirection: "row",
     float: "right",
     width: "69%",
     marginLeft: "35px"
   };
 
-  const flint = {
+  const title = {
     float: "left",
     width: "30%",
     fontFamily: "'Julius Sans One', sans-serif",
@@ -73,45 +69,49 @@ function Header() {
   `;
 
   return (
-    <div style={container}>
-      <div>
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <HoverTitle style={flint}>FLINT & FEATHERS</HoverTitle>
-        </Link>
-      </div>
-
-      <div stlye={menu}>
-        <li style={list}>
-          <a
-            href="https://www.etsy.com/shop/flintandfeathers/"
-            style={{ textDecoration: "none" }}
-          >
-            <HoverText style={h3}>Shop</HoverText>
-          </a>
-        </li>
-        <li style={list}>
-          <Link to="/about" style={{ textDecoration: "none" }}>
-            <HoverText style={h3}>About</HoverText>
-          </Link>
-        </li>
-        <li style={list}>
-          <Link to="/gallery" style={{ textDecoration: "none" }}>
-            <HoverText style={h3}>Gallery</HoverText>
-          </Link>
-        </li>
-        <li style={list}>
+    <Container style={container}>
+      <Row>
+        <Col xs="3">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <HoverText style={h3}>Collections</HoverText>
+            <HoverTitle style={title}>FLINT & FEATHERS</HoverTitle>
           </Link>
-        </li>
-        <style jsx>{`
-          a:visited {
-            color: #2f2f2d;
-          }
-        `}</style>
-      </div>
+        </Col>
+        <Col xs="auto"></Col>
+        <Col xs="3">
+          <div stlye={menu}>
+            <li style={list}>
+              <a
+                href="https://www.etsy.com/shop/flintandfeathers/"
+                style={{ textDecoration: "none" }}
+              >
+                <HoverText style={h3}>Shop</HoverText>
+              </a>
+            </li>
+            <li style={list}>
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <HoverText style={h3}>About</HoverText>
+              </Link>
+            </li>
+            <li style={list}>
+              <Link to="/gallery" style={{ textDecoration: "none" }}>
+                <HoverText style={h3}>Gallery</HoverText>
+              </Link>
+            </li>
+            <li style={list}>
+              <Link to="/" style={{ textDecoration: "none" }}>
+                <HoverText style={h3}>Collections</HoverText>
+              </Link>
+            </li>
+            <style jsx>{`
+              a:visited {
+                color: #2f2f2d;
+              }
+            `}</style>
+          </div>
+        </Col>
+      </Row>
       <div style={space}> </div>
-    </div>
+    </Container>
   );
 }
 

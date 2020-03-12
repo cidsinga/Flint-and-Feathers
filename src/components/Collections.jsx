@@ -31,7 +31,7 @@ function Collections() {
 
   const photo = {
     display: "inline-block",
-    width: "25%",
+    width: "100%",
     padding: "2.5%",
     float: "left",
     marginTop: "3%"
@@ -83,28 +83,36 @@ function Collections() {
       </div>
 
       <Row style={topRow}>
-        <div>
+        <Col>
           <Link to="/flowers" style={{ textDecoration: "none" }}>
             <HoverPic style={photo} src={flowers} />
           </Link>
-        </div>
-        <Link to="/scenes" style={{ textDecoration: "none" }}>
-          <HoverPic style={photo} src={gorge} />
-        </Link>
-        <Link to="/stones" style={{ textDecoration: "none" }}>
-          <HoverPic style={photo} src={ruby} />
-        </Link>
+        </Col>
+        <Col>
+          <Link to="/scenes" style={{ textDecoration: "none" }}>
+            <HoverPic style={photo} src={gorge} />
+          </Link>
+        </Col>
+        <Col>
+          <Link to="/stones" style={{ textDecoration: "none" }}>
+            <HoverPic style={photo} src={ruby} />
+          </Link>
+        </Col>
       </Row>
-      <br />
-      <div style={bottomRow}>
-        <Link to="/Feathers" style={{ textDecoration: "none" }}>
-          <HoverPic style={pic} src={gathering} />
-        </Link>
 
-        <Link to="/fun" style={{ textDecoration: "none" }}>
-          <HoverPic style={pic} src={jewel} />
-        </Link>
-      </div>
+      <Row style={topRow}>
+        <Col>
+          <Link to="/Feathers" style={{ textDecoration: "none" }}>
+            <HoverPic style={photo} src={gathering} />
+          </Link>
+        </Col>
+        <Col>
+          <Link to="/fun" style={{ textDecoration: "none" }}>
+            <HoverPic style={photo} src={jewel} />
+          </Link>
+        </Col>
+      </Row>
+      <Row></Row>
     </Container>
   );
 }
