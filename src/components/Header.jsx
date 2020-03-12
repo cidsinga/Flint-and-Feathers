@@ -10,7 +10,8 @@ function Header() {
     display: "inline-block",
     fontFamily: "'Julius Sans One', sans-serif",
     color: "#2f2f2d",
-    height: "23vh"
+    height: "23vh",
+    position: "relative"
   };
 
   const list = {
@@ -18,21 +19,19 @@ function Header() {
     textDecoration: "none",
     display: "inline-block",
     float: "right",
-    fontSize: "10px"
+
+    marginTop: "150px"
   };
 
   const menu = {
     display: "inline-block",
-    display: "flex",
     float: "right",
-    width: "69%",
-    marginLeft: "35px"
+    width: "69%"
   };
 
   const title = {
     float: "left",
     width: "30%",
-    fontFamily: "'Julius Sans One', sans-serif",
     height: "200px",
     marginTop: "100px",
     textAlign: "left",
@@ -43,7 +42,9 @@ function Header() {
   const h3 = {
     display: "inline",
     padding: "5px",
-    textAlign: "center"
+    textAlign: "center",
+    float: "right",
+    fontSize: "14px"
   };
 
   const space = {
@@ -71,13 +72,13 @@ function Header() {
   return (
     <Container style={container}>
       <Row>
-        <Col xs="3">
+        <Col xs="4">
           <Link to="/" style={{ textDecoration: "none" }}>
             <HoverTitle style={title}>FLINT & FEATHERS</HoverTitle>
           </Link>
         </Col>
-        <Col xs="auto"></Col>
-        <Col xs="3">
+        <Col xs="4"></Col>
+        <Col xs="4">
           <div stlye={menu}>
             <li style={list}>
               <a
